@@ -41,7 +41,7 @@ Lightweight Python scripts to support **basic RMF alignment checks**.
 ## Quick Demo
 
 ```bash
-git clone https://github.com/Jeanmatozo/nist-ai-rmf-assessments.git
+git clone https://github.com/Jeanmatozo/ai-governance-risk-assessments.git
 ```
 
 Run automation: 
