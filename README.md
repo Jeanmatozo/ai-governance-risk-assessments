@@ -3,20 +3,21 @@
 **AI system risk assessment packages aligned to NIST AI RMF, 
 ISO/IEC 42001, OMB M-24-10, and OWASP LLM Top 10.**
 
-Each assessment is a complete work product: executive summary, system 
-description, risk register, control gap analysis, and remediation roadmap. 
-Written for two audiences simultaneously — leadership and technical reviewers.
+This repository contains governance-focused AI risk assessments.  
+All adversarial testing and attack simulations are maintained separately in:
+
+https://github.com/Jeanmatozo/llm-adversarial-findings
 
 ---
 
 ## Assessment Index
 
-| # | Scenario | Frameworks | Status |
+| # | Scenario | Key Outputs | Status |
 |---|---|---|---|
-| 001 | Financial services LLM assistant | NIST AI RMF · ISO 42001 · OWASP LLM Top 10 | In progress |
-| 002 | Federal contractor CUI deployment | CMMC 2.0 · NIST AI RMF | Planned — Week 7 |
-| 003 | SEC AI disclosure — financial sector | SEC Rule 33-11216 · NIST AI RMF | Planned — Week 8 |
-| 004 | Healthcare guardrail evaluation | HIPAA · OWASP LLM Top 10 | Planned — Week 9 |
+| 001 | Financial services LLM assistant | Scenario definition · Risk register · Control mapping · ISO 42001 SoA · Gap analysis | Completed |
+| 002 | Federal contractor CUI deployment | CMMC domain mapping · AI gap analysis · SSP addendum | Planned |
+| 003 | SEC AI disclosure — financial sector | Disclosure triggers · monitoring framework · risk cross-reference | Planned |
+| 004 | Healthcare guardrail evaluation | Deployment scope · guardrail test plan · assurance statement | Planned |
 
 ---
 
@@ -25,20 +26,17 @@ Written for two audiences simultaneously — leadership and technical reviewers.
 ```bash
 assessments/
 ├── 001-financial-llm/
-│   ├── exec-summary.md
-│   ├── risk-register.md
-│   ├── control-mapping.md
-│   └── remediation-roadmap.md
-├── 002-cmmc-federal/
-├── 003-sec-disclosure/
-└── 004-healthcare-guardrail/
+│   # Core Governance (Week 1–2)
+│   ├── scenario-brief.md
+│   ├── risk-categories.md
+│   ├── risk-register-v1.md
+│   ├── control-mapping-v1.md
+│   ├── exec-summary-v1.md
+│   ├── iso42001-applicability-notes.md
+│   ├── soa-stub.md
+│   ├── cross-framework-mapping.md
+│   ├── gap-analysis-v1.md
 
-methodology/
-└── assessment-approach.md      ← Published Week 10
-
-templates/
-├── risk-register-template.md
-└── exec-summary-template.md
 ```
 ---
 
@@ -54,5 +52,4 @@ templates/
 
 ---
 
-*Adversarial findings that inform these assessments are documented in 
-[llm-adversarial-findings](https://github.com/Jeanmatozo/llm-adversarial-findings)
+
